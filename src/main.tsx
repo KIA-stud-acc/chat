@@ -13,9 +13,9 @@ const App = () => {
   return (
       <>
             <Routes>
-              <Route path="/web/auth" element={<NamingPage/>} />
-              <Route path="/web/chat" element={<ChatPage/>} />
-              <Route path="/web/draft" element={<Draft/>} />
+              <Route path="/chat/auth" element={<NamingPage/>} />
+              <Route path="/chat/" element={<ChatPage/>} />
+              <Route path="/chat/draft" element={<Draft/>} />
           </Routes>
       </>
 

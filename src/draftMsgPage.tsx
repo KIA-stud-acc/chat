@@ -11,10 +11,10 @@ function Draft() {
   // const [cls, setCls] = useState('close')
   const navigate = useNavigate();
   const submitBack = ()=>{
-    navigate('/web/chat')
+    navigate('/chat/')
   }
   const submitSend = ()=>{
-    navigate('/web/chat')
+    navigate('/chat/')
   }
 
   // useEffect(()=>{

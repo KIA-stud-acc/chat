@@ -13,12 +13,12 @@ function ChatPage() {
   const navigate = useNavigate();
   const submitExit = ()=>{
     setCls('close')
-    navigate('/web/auth')
+    navigate('/chat/auth')
   }
   
   const submitWrite = ()=>{
     setCls('close')
-    navigate('/web/draft')
+    navigate('/chat/draft')
   }
 
 

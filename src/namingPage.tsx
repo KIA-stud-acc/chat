@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 function NamingPage(){
     const navigate = useNavigate();
     const submitName = ()=>{
-        navigate("/web/chat")
+        navigate("/chat/")
     }
     return (
         <>
