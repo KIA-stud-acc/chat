@@ -1,0 +1,21 @@
+
+  .clrSqr{
+    width:5rem;
+    height:5rem;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    
+    border-radius: 100%;
+    text-align: center;
+  }
+  .ltr{
+    font-size: 3.5rem;
+  }
+  *.unselectable {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+ }

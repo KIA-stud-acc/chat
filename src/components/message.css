@@ -1,0 +1,36 @@
+.mess{
+    margin:1rem;
+}
+.ava{
+    display: inline-block;
+}
+.cont{
+    display: inline-block;
+    margin-left:1rem;
+    vertical-align: top;
+}
+.nm{
+    color: white;
+    font: 1.2rem arial;
+    margin-bottom: 0.8rem;
+    margin-top:0.2rem;
+}
+.nm:hover::after{
+    content: attr(data-userId);
+    color: #717171;
+    font: 1rem arial;
+    display: inline-block;
+}
+.txt{
+    color: white;
+    font: 0.9rem arial;
+    word-wrap:break-word;
+    max-width: 35rem;
+}
+.time{
+    margin-top:0.2rem;
+    color: white;
+    font: 1rem arial;
+    float: inline-end;
+    vertical-align: top;
+}

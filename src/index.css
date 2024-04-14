@@ -1,0 +1,9 @@
+
+.buttonWithHover:hover{
+    background-color: #717171;
+    border: 0.2rem solid #1F2326;
+}
+.buttonWithHover{
+    border: 0 solid transparent;
+transition: border 0.1s;
+}
