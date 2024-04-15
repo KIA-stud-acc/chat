@@ -34,7 +34,7 @@ function Draft() {
             </button>
           </div>
           <div className='contentZone21'>
-              <div className='draft' contentEditable data-placeholder="Напишите сообщение"></div>
+              <div className='draft' contentEditable="plaintext-only" data-placeholder="Напишите сообщение"></div>
           </div>
           <div className='contentZone31'>
           </div>

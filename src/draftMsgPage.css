@@ -37,6 +37,9 @@
   .contentZone21::-webkit-scrollbar-thumb:hover {
     background-color: #F58D8A;
   }
+  .contentZone21::-webkit-scrollbar-thumb:active {
+    background-color: #bd5e5b;
+  }
   .sendBtn{
     background-color: #434749;
     border-radius: 50rem;
