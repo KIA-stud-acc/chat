@@ -4,6 +4,10 @@
 .ava{
     display: inline-block;
 }
+.err{
+    width: 5rem;
+    height: 5rem;
+}
 .cont{
     display: inline-block;
     margin-left:1rem;
@@ -15,7 +19,13 @@
     margin-bottom: 0.8rem;
     margin-top:0.2rem;
 }
-.nm:hover::after{
+.errNm{
+    color: #FF0000;
+    font: 1.2rem arial;
+    margin-bottom: 0.8rem;
+    margin-top:0.2rem;
+}
+.nm:hover::after, .errNm:hover::after{
     content: attr(data-userId);
     color: #717171;
     font: 1rem arial;
@@ -23,6 +33,12 @@
 }
 .txt{
     color: white;
+    font: 0.9rem arial;
+    word-wrap:break-word;
+    max-width: 35rem;
+}
+.errTxt{
+    color: #FF6363;
     font: 0.9rem arial;
     word-wrap:break-word;
     max-width: 35rem;
