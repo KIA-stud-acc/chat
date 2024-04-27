@@ -3,7 +3,7 @@ import './message.css'
 import Avatar from './avatar'
 import error from '../assets/error.png'
 
-function Message(name: string, text:string, time:string, id:string) {
+function Message(name: string, text:string, time:string, id:string, me = false) {
     return (
         <>
         <div className='mess'>
@@ -11,7 +11,7 @@ function Message(name: string, text:string, time:string, id:string) {
             {id=='error'?<img src={error} className='err'></img>:Avatar(name)}
             </div>
             <div className='cont'>
-                <div className={id=='error'?'errNm':"nm"} data-userid={" #"+id}>
+                <div className={id=='error'?'errNm':("nm"+(me?" me":''))} data-userid={" #"+id}>
                     {name}
                 </div>
                 <div className={id=='error'?'errTxt':"txt"}>

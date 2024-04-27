@@ -66,7 +66,7 @@ function ChatPage() {
           </div>
           <div className='contentZone2'>
           {[...chat.values()].reverse().map((mess:any)=>(
-            mess.error?Message('Ошибка доставки сообщения', "Подробнее: потеря сегмента при доставке сообщения",mess.send_time.split(':')[0].padStart(2,'0')+':'+mess.send_time.split(':')[1].padStart(2,'0'), 'error'):Message(mess.sender_name, mess.message,mess.send_time.split(':')[0]+':'+mess.send_time.split(':')[1].padStart(2,'0'), '0')
+            mess.error?Message('Ошибка доставки сообщения', "Подробнее: потеря сегмента при доставке сообщения",mess.send_time.split(':')[0].padStart(2,'0')+':'+mess.send_time.split(':')[1].padStart(2,'0'), 'error'):Message(mess.sender_name, mess.message,mess.send_time.split(':')[0]+':'+mess.send_time.split(':')[1].padStart(2,'0'), 'сообщение', mess.sender_name == name)
           ))}
               
               
