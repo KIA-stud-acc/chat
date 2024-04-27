@@ -11,7 +11,7 @@ function Message(name: string, text:string, time:string, id:string) {
             {id=='error'?<img src={error} className='err'></img>:Avatar(name)}
             </div>
             <div className='cont'>
-                <div className={id=='error'?'errNm':"nm"} data-userId={" #"+id}>
+                <div className={id=='error'?'errNm':"nm"} data-userid={" #"+id}>
                     {name}
                 </div>
                 <div className={id=='error'?'errTxt':"txt"}>

@@ -76,8 +76,8 @@
     word-wrap:break-word;
     word-break: break-all;}
 
-    [contenteditable]:empty:before {
-        content: attr(data-placeholder);
-        color: grey;
-        display: inline-block;
-        }
+[contenteditable]:empty:before {
+    content: attr(data-placeholder);
+    color: grey;
+    display: inline-block;
+    }

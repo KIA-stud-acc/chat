@@ -13,6 +13,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.3",
+    "js-cookie": "^3.0.5",
+    "os": "^0.1.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
@@ -21,6 +24,7 @@
     "react-spring": "^9.7.3"
   },
   "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",

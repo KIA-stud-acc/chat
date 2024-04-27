@@ -6,6 +6,8 @@ import './index.css'
 //import { Provider } from "react-redux";
 import {BrowserRouter as HashRouter,Route, Routes} from 'react-router-dom'
 import Draft from './draftMsgPage.tsx'
+import { Provider } from 'react-redux'
+import store from './store.ts'
 
 const App = () => {
   
@@ -26,7 +28,9 @@ const App = () => {
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <HashRouter>
-      <App />
+      <Provider store={store}>
+        <App/>
+      </Provider>
     </HashRouter>
   </React.StrictMode>
 )

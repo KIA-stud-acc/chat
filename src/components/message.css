@@ -26,7 +26,7 @@
     margin-top:0.2rem;
 }
 .nm:hover::after, .errNm:hover::after{
-    content: attr(data-userId);
+    content: attr(data-userid);
     color: #717171;
     font: 1rem arial;
     display: inline-block;
