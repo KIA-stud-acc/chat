@@ -32,9 +32,10 @@ function ChatPage() {
 
     ws.current.onmessage = e => {   
         const message = JSON.parse(e.data);
-        setChat(new Map(chat.set(message.send_time,message)))
-        dispatch(setChatHistoryAction(new Map(chat)))
-
+        if (message.sender_name != name){
+          setChat(new Map(chat.set(message.send_time,message)))
+          dispatch(setChatHistoryAction(new Map(chat)))
+        }
     };
 }, []);
 

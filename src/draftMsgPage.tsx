@@ -24,11 +24,14 @@ function Draft() {
   }
   let now = new Date();
   const submitSend = ()=>{
-    ws.current?ws.current.send(JSON.stringify({
+    const tmpMsg = {
       "sender_name":name,
       "send_time":now.getHours().toString()+':'+now.getMinutes().toString()+':'+now.getSeconds().toString()+':'+now.getMilliseconds().toString(),
       "message":mess
-    })):null
+    }
+    ws.current?ws.current.send(JSON.stringify(tmpMsg)):null
+    setChat(new Map(chat.set(tmpMsg.send_time,tmpMsg)))
+    dispatch(setChatHistoryAction(new Map(chat)))
     navigate('/chat/')
   }
   const gettingData = useCallback(() => {
@@ -36,9 +39,10 @@ function Draft() {
 
     ws.current.onmessage = e => {   
         const message = JSON.parse(e.data);
-        setChat(new Map(chat.set(message.send_time,message)))
-        dispatch(setChatHistoryAction(new Map(chat)))
-
+        if (message.sender_name != name){
+          setChat(new Map(chat.set(message.send_time,message)))
+          dispatch(setChatHistoryAction(new Map(chat)))
+        }
     };
 }, []);
   useEffect(()=>{

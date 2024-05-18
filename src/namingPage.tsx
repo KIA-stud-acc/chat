@@ -34,7 +34,7 @@ function NamingPage(){
                 <div className='contentZone'>
                     <img src={google} className='logo'></img>
                     <h1 className='header'>Вход</h1>
-                    <input maxLength={20} name="text" type="text" className={`form-control inputField`} placeholder='Имя'  onChange={(event => setNameValue(event.target.value))}/>
+                    <input maxLength={20} name="text" type="text" autoComplete="off" className={`form-control inputField`} placeholder='Имя'  onChange={(event => setNameValue(event.target.value))}/>
                     {alert&&<div className='alert'>Имя должно содержать от 1-го до 20-и символов</div>}
                     <div className='shl'><button className='enterBtn buttonWithHover' onClick={()=>submitName()}>Войти</button></div>
                 </div>
